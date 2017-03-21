@@ -8,7 +8,7 @@ cd into the directory containing the directory of reads
 docker run -v $(pwd):/root vera/albacore \
  -i relative/path/to/reads \
  -c /opt/albacore/FLO-MIN106_LSK208_2d.cfg \
- -s output
+ -s output \
  -t $(nproc)
 ```
 
