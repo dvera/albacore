@@ -12,11 +12,18 @@ docker run -v $(pwd):/root vera/albacore \
  -t $(nproc)
 ```
 
-### possible configs are:
-- /opt/albacore/FLO-MIN106_LSK108_linear.cfg
-- /opt/albacore/FLO-MIN106_LSK208_2d.cfg
-- /opt/albacore/FLO-MIN106_LSK208_linear.cfg
-- /opt/albacore/FLO-MIN106_LSK208_tc.cfg
-- /opt/albacore/FLO-MIN106_RAD001_linear.cfg
-- /opt/albacore/FLO-MIN106_RAD002_linear.cfg
-
+### Available flowcell + kit combinations are:
+|flowcell    |kit       | barcoding  | config file             |
+|------------|----------|------------|-------------------------|
+|FLO-MIN106  |SQK-LSK108|            | r94_450bps_linear.cfg   |
+|FLO-MIN106  |SQK-LSK208|            | r94_250bps_2d.cfg       |
+|FLO-MIN106  |SQK-LWB001|  included  | r94_450bps_linear.cfg   |
+|FLO-MIN106  |SQK-LWP001|            | r94_450bps_linear.cfg   |
+|FLO-MIN106  |SQK-RAB201|  included  | r94_450bps_linear.cfg   |
+|FLO-MIN106  |SQK-RAD002|            | r94_450bps_linear.cfg   |
+|FLO-MIN106  |SQK-RAS201|            | r94_450bps_linear.cfg   |
+|FLO-MIN106  |SQK-RBK001|  included  | r94_450bps_linear.cfg   |
+|FLO-MIN106  |SQK-RLB001|  included  | r94_450bps_linear.cfg   |
+|FLO-MIN106  |SQK-RLI001|            | r94_450bps_linear.cfg   |
+|FLO-MIN106  |SQK-RNA001|            | r94_70bps_rna_linear.cfg|
+|FLO-MIN106  |VSK-VBK001|            | r94_450bps_linear.cfg   |
