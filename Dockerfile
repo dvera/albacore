@@ -1,7 +1,7 @@
 FROM ubuntu:trusty
 MAINTAINER Daniel Vera
 
-ENV DEB_URL https://mirror.oxfordnanoportal.com/software/analysis/python3-ont-albacore_1.1.0-1~trusty_all.deb
+ENV DEB_URL https://mirror.oxfordnanoportal.com/software/analysis/python3-ont-albacore_1.1.1-1~trusty_all.deb
 
 WORKDIR /root
 
