@@ -2,15 +2,20 @@
 Dockerfile for the Albacore basecaller from Oxford Nanopore
 
 ## usage
-cd into the directory containing the directory of reads
+cd into the directory containing the `reads` directory
 
 ```bash
-docker run -v $(pwd):/root vera/albacore \
- -i relative/path/to/reads \
- -c /opt/albacore/FLO-MIN106_LSK208_2d.cfg \
- -s output \
- -t $(nproc)
+docker run -v $PWD:$PWD -w $PWD -u $UID \
+vera/albacore \
+--recursive \
+-t $(nproc) \
+-i reads \
+-c /opt/albacore/r94_450bps_linear.cfg \
+-s output \
 ```
+
+
+
 
 ### Available flowcell + kit combinations are:
 |flowcell    |kit       | barcoding  | config file             |
